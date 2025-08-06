@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Contact Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+    <header><?php include 'includes/header.php'; ?></header>
     <div class="contact-form">
         <?php
         $success = '';
@@ -34,6 +35,7 @@
             <p class="error"><?= htmlspecialchars($error) ?></p>
         <?php endif; ?>
         <form method="post" action="">
+            <h1>Contact form</h1>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -46,5 +48,6 @@
             <button type="submit">Send</button>
         </form>
     </div>
+    <footer><?php include 'includes/footer.php'; ?></footer>
 </body>
 </html>

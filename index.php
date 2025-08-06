@@ -5,11 +5,10 @@
     <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
 <body>
+    <header><?php include 'includes/header.php'; ?></header>
     <div class="container">
         <h1>Welcome to My Portfolio</h1>
         <div class="intro">
@@ -31,5 +30,6 @@
             </div>
         </div>
     </div>
+    <footer><?php include 'includes/footer.php'; ?></footer>
 </body>
 </html>

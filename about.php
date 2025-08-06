@@ -8,12 +8,13 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header><?php include 'includes/header.php'; ?></header>
     <section class="about-section">
         <div class="about-image">
-            <img src="profile.jpg" alt="Profile Image">
+            <img src="data/dom.png" alt="Profile Image">
         </div>
         <div class="about-details">
             <h2>About Me</h2>
@@ -28,5 +29,6 @@
             </ul>
         </div>
     </section>
+    <footer> <p> <?php include 'includes/footer.php'; ?></footer>
 </body>
 </html>

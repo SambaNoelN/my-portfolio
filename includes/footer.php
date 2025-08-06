@@ -5,17 +5,17 @@
             Thank you for visiting my portfolio. Feel free to reach out via social media or email!
         </p>
         <div style="margin-bottom: 20px;">
-            <a href="mailto:your.email@example.com" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 1.2em;">
+            <a href="mailto:sambanoelnformi@gmail.com" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 1.2em;">
                 <i class="fas fa-envelope"></i> Email
             </a>
-            <a href="https://github.com/yourusername" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 1.2em;">
+            <a href="https://github.com/SambaNoelN" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 1.2em;">
                 <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 1.2em;">
+            <a href="https://linkedin.com/in/samba noel n" target="_blank" style="color: #fff; margin: 0 10px; text-decoration: none; font-size: 1.2em;">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
         </div>
-        <small style="opacity: 0.7;">&copy; <?php echo date('Y'); ?> Your Name. All rights reserved.</small>
+        <small style="opacity: 0.7;">&copy; <?php echo date('Y'); ?> Samba Noel N. All rights reserved.</small>
     </div>
     <!-- Font Awesome CDN for icons -->
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
