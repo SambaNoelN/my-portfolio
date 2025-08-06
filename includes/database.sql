@@ -1,0 +1,17 @@
+
+CREATE DATABASE portfolio;
+
+
+
+
+USE portfolio;
+
+
+CREATE TABLE blogs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+

@@ -1,0 +1,106 @@
+body { font-family: Arial, sans-serif;
+     margin: 40px;
+     background: #f9f9f9; 
+}
+
+        .container { max-width: 900px; 
+            margin: auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
+        h1 {
+             color: #333; 
+            }
+        .intro { 
+            margin-bottom: 30px; 
+            font-size: 1.2em; 
+            color: #555; }
+        .featured-items {
+             display: flex; 
+             gap: 24px; 
+             flex-wrap: wrap; 
+            }
+        .item {
+             background: #f1f1f1; 
+             padding: 20px; 
+             border-radius: 6px; 
+             flex: 1 1 250px; 
+             min-width: 220px;
+             }
+        .item-title { 
+            font-weight: bold; 
+            margin-bottom: 10px;
+             color: #222;
+         }
+        .item-desc { 
+            color: #666;
+         }
+         .about-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 24px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+        }
+        .about-image {
+            flex: 0 0 180px;
+        }
+        .about-image img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+        }
+        .about-details {
+            flex: 1;
+        }
+        .about-details h2 {
+            margin-top: 0;
+        }
+        .experience-list {
+            margin: 16px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        .experience-list li {
+            margin-bottom: 8px;
+        }
+
+        .contact-form { 
+            max-width: 400px;
+            margin: 40px auto; 
+            padding: 20px; 
+            border: 1px solid #ccc;
+            border-radius: 8px; }
+        .contact-form label { 
+            display: block; 
+            margin-bottom: 6px; }
+        .contact-form input, .contact-form textarea {
+             width: 100%; 
+             padding: 8px;
+              margin-bottom: 12px; 
+              border: 1px solid #ccc; 
+              border-radius: 4px; 
+            }
+        .contact-form button { 
+            padding: 10px 20px; 
+            background: #007bff; 
+            color: #fff; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; }
+        .contact-form button:hover { 
+            background: #0056b3; 
+        }
+        .success { 
+            color: green; 
+            font-weight: bold;}
+        .error { 
+            color: red;
+            font-weight: bold;}
