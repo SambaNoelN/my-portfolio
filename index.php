@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <body>
+    <marquee>Present intern at <b style="color: skyblue;">skye8 tech company</b> track:  <b style="color:black">back-end dev</b></marquee>
     <header><?php include 'includes/header.php'; ?></header>
     <div class="container">
         <h1>Welcome to My Portfolio</h1>
