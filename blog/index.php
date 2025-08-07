@@ -1,9 +1,13 @@
+
+
+
+
 <?php
-// Sample data: Replace with database query in production
+// am to be replace this Sample data: Replace with database query in production
 $posts = [
     [
         'title' => 'First Blog Post',
-        'date' => '2024-06-01',
+        'date' => '',
         'content' => 'Welcome to my first blog post!'
     ],
     [

@@ -1,7 +1,7 @@
 <?php
 
 $homepageData = [
-    'name' => 'Your Name',
+    'name' => 'Samba noel ',
     'title' => 'Web Developer & Designer',
     'bio' => 'Passionate developer with experience in building modern web applications and creative designs.',
     'profile_image' => 'dom.png',

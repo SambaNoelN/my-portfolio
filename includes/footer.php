@@ -1,6 +1,29 @@
-<footer style="background: linear-gradient(90deg, #1e3c72, #2a5298); color: #fff; padding: 40px 0; text-align: center; font-family: 'Segoe UI', Arial, sans-serif;">
+<?php
+ $email =$_GET['email'];
+ if  (isset($_GET['email']))
+    {
+        $email = mysql_real_escape_string($_GET['email']);
+    }
+    else
+    {
+        $email = '';
+    }
+
+?>
+
+
+<footer style="background: linear-gradient(to bottom right, blue, skyblue); color: #fff; padding: 40px 0; text-align: center; font-family: 'Segoe UI', Arial, sans-serif;">
     <div style="max-width: 800px; margin: 0 auto;">
         <h2 style="margin-bottom: 10px; font-size: 2em;">Let's Connect!</h2>
+        <section class="about">
+        <form action="" class="subscrib">
+            <h3>Subscribe News letter</h3>
+            <p>Subscribe to my new and updated live projects</p>
+            <div class="input">
+                <input type="email" name="email" id="email" placeholder="Email address" required>
+                <button type="submit" title="subscribe">Subscribe</button>
+            </div>
+
         <p style="margin-bottom: 25px; font-size: 1.1em;">
             Thank you for visiting my portfolio. Feel free to reach out via social media or email!
         </p>

@@ -29,6 +29,17 @@
             </ul>
         </div>
     </section>
+    <section class="about-section">
+        <form action="" class="subscribe">
+            <h3>Subscribe News letter</h3>
+            <p>Subscribe to my new and updated live projects</p>
+            <div class="input">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit" title="subscribe">Subscribe</button>
+            </div>
+
+        </form>
+    </section>
     <footer> <p> <?php include 'includes/footer.php'; ?></footer>
 </body>
 </html>

@@ -1,7 +1,11 @@
+html {
+    background-color: ghostwhite;
+}
+
 body { font-family: Arial, sans-serif;
      margin: 40px;
      background: #f9f9f9; 
-}
+    }
 
         .container { 
             max-width: 800px; 
@@ -28,14 +32,22 @@ body { font-family: Arial, sans-serif;
              border-radius: 6px; 
              flex: 1 1 250px; 
              min-width: 220px;
+             border-left: 6px solid red;
+             transition: width 2s, height 4s;
+             }
+             .item:hover {
+                min-width: 300px;
+                transition: min-width 2s;
              }
         .item-title { 
             font-weight: bold; 
             margin-bottom: 10px;
              color: #222;
+             transition-timing-function: linear;
          }
         .item-desc { 
             color: #666;
+            -o-transition-delay: inherit;
          }
          .about-section {
             max-width: 800px;
@@ -48,6 +60,7 @@ body { font-family: Arial, sans-serif;
             gap: 32px;
             align-items: flex-start;
         }
+
         .about-image {
             flex: 0 0 180px;
         }
@@ -77,18 +90,37 @@ body { font-family: Arial, sans-serif;
             max-width: 400px;
             margin: 40px auto; 
             padding: 20px; 
-            border: 1px solid #ccc;
-            border-radius: 8px; }
+            border: 5px solid #ccc;
+            border-radius: 8px; 
+            animation-name: appear;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+        }
+        @keyframes appear {
+            background-image: linear-gradient (to right, blue, skyblue)
+        }
         .contact-form label { 
             display: block; 
-            margin-bottom: 6px; }
+            margin-bottom: 6px; 
+
+        }
+
         .contact-form input, .contact-form textarea {
              width: 100%; 
              padding: 8px;
               margin-bottom: 12px; 
               border: 1px solid #ccc; 
               border-radius: 4px; 
+              background-color: lightgrey;
+              border-style: dotted;
+              border-left: 6px solid skyblue;
+
+              
             }
+
+
         .contact-form button { 
             padding: 10px 20px; 
             background: #007bff; 
@@ -97,7 +129,8 @@ body { font-family: Arial, sans-serif;
             border-radius: 4px; 
             cursor: pointer; }
         .contact-form button:hover { 
-            background: #0056b3; 
+            background-image: linear-gradient(to right, blue, skyblue);
+
         }
         .success { 
             color: green; 
@@ -105,3 +138,46 @@ body { font-family: Arial, sans-serif;
         .error { 
             color: red;
             font-weight: bold;}
+            .subscribe {
+                width: 330px;
+                margin: 10px auto;
+                padding: 30px 20px;
+                background: skyblue;
+                border-radius: 10px;
+                box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            .subscribe h3 {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .subscribe p {
+                text-align: center;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            .subscribe .input {
+                width: 100%;
+                display: flex;
+                padding: 3px;
+                border: 1px dashed #fff;
+                border-radius: 2px;
+                gap: 5px;
+            }
+            .subscribe .input input {
+                padding: 8px 18px;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+            }
+            .input button {
+                padding: 8px 12px;
+                width: 120px;
+                outline: none;
+                border: none;
+                background: #19f;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }

@@ -35,7 +35,7 @@
             <p class="error"><?= htmlspecialchars($error) ?></p>
         <?php endif; ?>
         <form method="post" action="">
-            <h1>Contact form</h1>
+            <h1 style="text-shadow: 2px 2px 5px skyblue; ">Contact form</h1>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 

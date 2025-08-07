@@ -14,7 +14,7 @@ $aboutData = [
     
     ],
     'profile_image' => 'dome3.png', 
-    'contact_email' => 'your.email@example.com'
+    'contact_email' => 'sambanoelnformi@gmail.com'
 ];
 
 ?>
