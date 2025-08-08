@@ -14,4 +14,10 @@ CREATE TABLE blogs (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-
+create table visitorcontacts (
+    id int auto_increment primary key,
+    name varchar(255) not null,
+    email varchar(255) not null,
+    message VARCHAR(COMMENT) not NULL,
+    visited_at datetime default current_timestamp
+)

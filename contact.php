@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +15,16 @@
         <?php
         $success = '';
         $error = '';
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST')
+       {
             $name = trim($_POST['name'] ?? '');
             $email = trim($_POST['email'] ?? '');
             $message = trim($_POST['message'] ?? '');
-
+        
             if ($name && filter_var($email, FILTER_VALIDATE_EMAIL) && $message) {
 
-                // Here you can process the form (e.g., send email, save to DB)
+                // send email, save to DB
+               
 
                 $success = "Thank you for contacting us!";
             } else {

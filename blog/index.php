@@ -1,41 +1,58 @@
+<?php 
+//database connection
+
+require_once("../includes/config.php");
+
+
+$query= "SELECT * FROM Blogs ORDER BY id DESC";
+$result = mysqli_query($conn, $query);
 
 
 
 
-<?php
-// am to be replace this Sample data: Replace with database query in production
-$posts = [
-    [
-        'title' => 'First Blog Post',
-        'date' => '',
-        'content' => 'Welcome to my first blog post!'
-    ],
-    [
-        'title' => 'Another Update',
-        'date' => '2024-06-05',
-        'content' => 'Here is another update on my portfolio.'
-    ]
-];
+
 ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Blog Posts</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .post { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 10px; }
-        .title { font-size: 1.5em; margin: 0; }
-        .date { color: #888; font-size: 0.9em; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog - Website </title>
 </head>
 <body>
-    <h1>Blog Posts</h1>
-    <?php foreach ($posts as $post): ?>
-        <div class="post">
-            <h2 class="title"><?php echo htmlspecialchars($post['title']); ?></h2>
-            <div class="date"><?php echo htmlspecialchars($post['date']); ?></div>
-            <p><?php echo nl2br(htmlspecialchars($post['content'])); ?></p>
+     <?php include '../includes/header.php'; ?>
+    <header class="header">
+      <div class="container">
+        <div class="content">
+          <div>
+            <p class="badge">Our blog</p>
+            <h1>Resources and insights</h1>
+            <p>
+              The latest industry news, interviews, technologies, and resources.
+            </p>
+          </div>
+          <input class="search-bar" type="search" placeholder="Search...." />
         </div>
-    <?php endforeach; ?>
+      </div>
+    </header>
+<?php
+    while ($row = mysqli_fetch_assoc($result)) {
+    echo "<h2>" . $row['title'] . "</h2>";
+    echo "<p>" . $row['content'] . "</p>";
+    echo "<p><small>Posted on " . $row['created_at'] . "</small></p>";
+}
+
+mysqli_close($conn);
+?>
+  <?php include '../includes/footer.php'; ?>
 </body>
 </html>

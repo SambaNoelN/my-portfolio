@@ -23,23 +23,79 @@
             </p>
             <h3>Experience</h3>
             <ul class="experience-list">
-                <li><strong>Web Developer intern</strong> at Skye8 tech company (2025 - Present)</li>
-                <li><strong>Frontend Developer</strong> at ABC Studio (2023 - 204)</li>
-                <li><strong>Freelance Projects</strong> (2024 - 2025)</li>
+                <li><strong>Backend Developer intern</strong> at Skye8 tech company <?php echo date('M-d:Y') ?></li>
             </ul>
         </div>
     </section>
+    <hr>
     <section class="about-section">
-        <form action="" class="subscribe">
-            <h3>Subscribe News letter</h3>
-            <p>Subscribe to my new and updated live projects</p>
-            <div class="input">
-                <input type="email" placeholder="Email address" required>
-                <button type="submit" title="subscribe">Subscribe</button>
-            </div>
-
-        </form>
+        <div class="about-image">
+            <img src="photo.png" alt="profile image">
+        </div>
+        <div class="about-details">
+                <h2>Intern at <strong>SKYE8 TECH COMPANY</strong></h2>
+                <P>  </P>
+                <h3>Experience</h3>
+                <ul class="experince-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                
+         </div>
+         wanna know more about 
     </section>
+    <p style="color: skyblue;">At SKYE8 we LIVE THE FUTURE! <a href="https://Skye8tech.com">read more</a></p>
+    <hr>
+    <section class="about-section">
+        <div class="about-image">
+            <img src="photo.png" alt="profile image">
+        </div>
+        <div class="about-details">
+                <h2>Student at <strong><abbr>SHIBUST</abbr></strong></h2>
+                <P>  </P>
+                <h3>Experience</h3>
+                <ul class="experince-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+         </div>
+    </section>
+    <hr>
+    <section class="about-section">
+        <div class="about-image">
+            <img src="photo.png" alt="profile image">
+        </div>
+        <div class="about-details">
+                <h2>Acquired Driving licens at <strong> DIGITAL DRIVING SCHOOL</strong></h2>
+                <P>  </P>
+                <h3>Experience</h3>
+                <ul class="experince-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+         </div>
+    </section>
+    <hr>
+    <section class="about-section">
+        <div class="about-image">
+            <img src="photo.png" alt="profile image">
+        </div>
+        <div class="about-details">
+                <h2>Student  <strong><abbr>N</abbr></strong></h2>
+                <P>  </P>
+                <h3>Experience</h3>
+                <ul class="experince-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+         </div>
+    </section>
+    <hr>
+    
     <footer> <p> <?php include 'includes/footer.php'; ?></footer>
 </body>
 </html>

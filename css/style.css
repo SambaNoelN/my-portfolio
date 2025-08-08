@@ -1,19 +1,38 @@
+marquee {
+    position: sticky;
+    top: 0;
+    background-color: #f0f8ff;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+header {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
 html {
     background-color: ghostwhite;
 }
 
 body { font-family: Arial, sans-serif;
-     margin: 40px;
      background: #f9f9f9; 
     }
 
         .container { 
-            max-width: 800px; 
+            width: auto; 
             margin: auto; 
             background: #fff; 
             padding: 30px; 
             border-radius: 8px; 
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
+            
         h1 {
              color: #333; 
             }
@@ -34,6 +53,7 @@ body { font-family: Arial, sans-serif;
              min-width: 220px;
              border-left: 6px solid red;
              transition: width 2s, height 4s;
+             columns: 2;
              }
              .item:hover {
                 min-width: 300px;
@@ -81,6 +101,7 @@ body { font-family: Arial, sans-serif;
             margin: 16px 0 0 0;
             padding: 0;
             list-style: none;
+            
         }
         .experience-list li {
             margin-bottom: 8px;

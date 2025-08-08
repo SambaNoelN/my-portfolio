@@ -7,11 +7,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    </script>
+</head>
 <body>
-    <marquee>Present intern at <b style="color: skyblue;">skye8 tech company</b> track:  <b style="color:black">back-end dev</b> <?php echo date('Y-m-d:H-m-s') ?></marquee>
-    <header><?php include 'includes/header.php'; ?></header>
-    <div class="container">
+    <marquee style="position: stick; top: 0;">Present intern at <b style="color: skyblue;">skye8 tech company</b> track:  <b style="color:black">back-end dev</b> <?php echo date('Y-m-d:H-m-s') ?></marquee>
+    <header style="position: stick; top: 0;"><?php include 'includes/header.php'; ?></header>
+    
         <h1> <img src="data/dom.png" alt="image" style="border-radius: 50%; width:75px; height: 75px;">Welcome to My Portfolio</h1>
         <div class="intro">
             Hi, I'm a passionate developer showcasing my latest projects and featured work. Explore below to see what I've been working on!
@@ -42,7 +42,6 @@
             </div>
            
         </div>
-    </div>
     <footer><?php include 'includes/footer.php'; ?></footer>
 </body>
 </html>

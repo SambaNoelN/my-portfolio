@@ -1,5 +1,5 @@
 <?php
-// Database connection (update with your credentials)
+
  include_once 'includes/config.php';
 
 // Get post ID from URL
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <h2>Edit Blog Post</h2>
-    <form method="post">
+    <form method="post" action="">
         <label>Title:<br>
             <input type="text" name="title" value="<?php echo htmlspecialchars($post['title']); ?>" required>
         </label><br><br>

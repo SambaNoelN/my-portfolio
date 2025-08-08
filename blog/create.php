@@ -1,48 +1,33 @@
-<?php
-// Handle form submission
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $title = trim($_POST['title'] ?? '');
-    $content = trim($_POST['content'] ?? '');
+<?php  
+//database connection
+ require_once("../includes/config.php");
 
-    // Simple validation
-    if ($title && $content) {
-        // Here you would typically save to a database
-        // For demonstration, we'll just show a success message
-        $success = "Blog post created successfully!";
+if(isset($_POST['submit'])) {
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    
+    // Assuming you have a database connection in $conn
+    $query = "INSERT INTO Blogs (title, content) VALUES ('$title', '$content')";
+    
+    if(mysqli_query($conn, $query)) {
+        echo "Blog post created successfully!";
     } else {
-        $error = "Please fill in all fields.";
+        echo "Error: " . mysqli_error($conn);
     }
+    header("Location: index.php");
+    exit();
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Create Blog Post</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        form { max-width: 500px; margin: auto; }
-        input, textarea { width: 100%; padding: 8px; margin: 8px 0; }
-        button { padding: 10px 20px; }
-        .message { color: green; }
-        .error { color: red; }
-    </style>
-</head>
-<body>
-    <h2>Create a New Blog Post</h2>
-    <?php if (!empty($success)): ?>
-        <p class="message"><?= htmlspecialchars($success) ?></p>
-    <?php elseif (!empty($error)): ?>
-        <p class="error"><?= htmlspecialchars($error) ?></p>
-    <?php endif; ?>
-    <form method="post" action="">
+<form action="" method="POST">
+    <div>
         <label for="title">Title:</label>
-        <input type="text" name="title" id="title" required>
-
+        <input type="text" id="title" name="title" required>
+    </div>
+    <div>
         <label for="content">Content:</label>
-        <textarea name="content" id="content" rows="8" required></textarea>
+        <textarea id="content" name="content" rows="5" required></textarea>
+    </div>
+    <button type="submit" name="submit">Create Blog Post</button>
 
-        <button type="submit">Create Post</button>
-    </form>
-</body>
-</html>
+</form>
