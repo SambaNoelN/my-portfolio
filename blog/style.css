@@ -4,7 +4,7 @@
   --primary-color: #d6bbfb;
   --secondary-color: #e9d7fe;
   --light-color: #f4ebff;
-  --dark-color: #6941c6;
+  --dark-color: #400ac0;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 
 .header {
   color: var(--dark-color);
-  background-color: #f9f5ff;
+  background-color: skyblue;
   padding: 4rem;
   width: 100%;
   text-align: center;

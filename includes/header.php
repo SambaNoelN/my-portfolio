@@ -17,7 +17,7 @@
                 <li><a href="about.php" style="color: #fff; text-decoration: none;">&nbsp;About&nbsp;</a></li>
                 <li><a href="services.php" style="color: #fff; text-decoration: none;">services</a></li>
                 <li><a href="contact.php" style="color: #fff; text-decoration: none;">Contact</a></li>
-                <li><a href="blog/create.php" style="color: #fff; text-decoration: none;">Blogs</a></li>
+                <li><a href="blog/index.php" style="color: #fff; text-decoration: none;">Blogs</a></li>
                 <li><a href="gallery.php" style="color: #fff; text-decoration: none;">Gallery</a></li>
             </ul>
             <button id="toggleNav" style="background: #444; color: #fff; border: none; padding: 0.5rem 1rem; cursor: pointer; font-size: 1rem;">Menu</button>

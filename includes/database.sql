@@ -13,11 +13,11 @@ CREATE TABLE blogs (
     content TEXT NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
-
+USE portfolio;
 create table visitorcontacts (
     id int auto_increment primary key,
     name varchar(255) not null,
     email varchar(255) not null,
-    message VARCHAR(COMMENT) not NULL,
+    message VARCHAR(255) not null,
     visited_at datetime default current_timestamp
 )

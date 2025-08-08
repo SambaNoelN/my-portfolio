@@ -1,4 +1,6 @@
-
+<?php 
+ require_once("includes/config.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +26,13 @@
             if ($name && filter_var($email, FILTER_VALIDATE_EMAIL) && $message) {
 
                 // send email, save to DB
-               
 
-                $success = "Thank you for contacting us!";
+                $query = "INSERT INTO visitorcontacts (name, email, message) VALUES ('$name', '$email', '$message')";
+                if (mysqli_query($conn, $query)) {
+                    $success = "Thank you for contacting us!";
+                } else {
+                    $error = "There was an error submitting your message.";
+                }
             } else {
                 $error = "Please fill in all fields correctly.";
             }

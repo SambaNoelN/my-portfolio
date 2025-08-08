@@ -46,10 +46,19 @@ $result = mysqli_query($conn, $query);
     </header>
 <?php
     while ($row = mysqli_fetch_assoc($result)) {
-    echo "<h2>" . $row['title'] . "</h2>";
-    echo "<p>" . $row['content'] . "</p>";
-    echo "<p><small>Posted on " . $row['created_at'] . "</small></p>";
-}
+        ?>
+        <section class="main-content">
+          <div class="container grid">
+            <h2><?php echo $row['title']; ?></h2>
+            <p><?php echo $row['content']; ?></p>
+            <p><small>Posted on <?php echo $row['created_at']; ?></small></p>
+          </div>
+        </section>
+        <div class="container load">
+      <p class="load-more"><i class="fas fa-arrow-down"></i> Load more</p>
+    </div>
+        <?php
+    }
 
 mysqli_close($conn);
 ?>
