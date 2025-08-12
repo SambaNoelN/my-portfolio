@@ -25,3 +25,18 @@ $services = [
 
 // You can use $services in your portfolio pages.
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>services</h1>
+    <?php foreach ($services as $idx => $service): ?>
+        <?php echo $services['title'] ?>
+    <?php endforeach; ?>
+</body>
+</html>

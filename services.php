@@ -34,7 +34,7 @@ $services = [
 <body style="background-color: lightblue;">
     <header style="position: stick; top: 0;"> <?php include ('includes/header.php'); ?></header>
     <div class="conntainer">
-    <ul style="columns: auto;">
+    <u style="columns: auto;">
     <?php foreach ($services as $service): ?>
         <section class="about-section">
         <li>
@@ -46,7 +46,6 @@ $services = [
         </li>
         </section>
     <?php endforeach; ?>
-    </ul>
 </div>
 <footer> <?php  include ('includes/footer.php');?></footer>
 </body>

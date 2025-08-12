@@ -298,7 +298,7 @@ a{
             <div class="home-img">
                 <div class="img-box">
                     <div class="img-item">
-                        <img src="data/dom2.png" alt="profile-photo" >
+                        <img src="../data/dom.png" alt="profile-photo" >
                     </div>
                 </div>
             </div>

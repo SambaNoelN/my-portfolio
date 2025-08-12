@@ -27,6 +27,30 @@ $result = mysqli_query($conn, $query);
       referrerpolicy="no-referrer"
     />
     <title>Blog - Website </title>
+    <script>
+      function showResults(str)
+      {
+        if (str.length==0)
+        {
+          document.getElementById("livesearch").innerHTML="";
+
+          return;
+        }
+        var xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function()
+        {
+          if (this.readyState==4 && this.status==200)
+          {
+            document.getElementById("livesearch").innerHTML=this.responseText;
+
+
+          }
+        }
+
+        xmlhttp.open("GET","livesearch.php?q="+str,true);
+        xmlhttp.send();
+      }
+    </script>
 </head>
 <body>
      <?php include '../includes/header.php'; ?>
@@ -34,14 +58,17 @@ $result = mysqli_query($conn, $query);
       <div class="container">
         <div class="content">
           <div>
-            <p class="badge">Our blog</p>
+            <p class="badge">my blog</p>
             <h1>Resources and insights</h1>
             <p>
-              The latest industry news, interviews, technologies, and resources.
+              The latest feeds, interviews, technologies, and resources.
             </p>
           </div>
-          <input class="search-bar" type="search" placeholder="Search...." />
+          <form action="livesearch.php" method="">
+            <input class="search-bar" id="livesearch" onkeyup="showResult(this.value)" type="search" placeholder="Search...." />
+          </form>
         </div>
+         <aside class="badge"><a href="create.php">Add Post</a></aside>
       </div>
     </header>
 <?php
@@ -49,9 +76,15 @@ $result = mysqli_query($conn, $query);
         ?>
         <section class="main-content">
           <div class="container grid">
-            <h2><?php echo $row['title']; ?></h2>
-            <p><?php echo $row['content']; ?></p>
-            <p><small>Posted on <?php echo $row['created_at']; ?></small></p>
+            <div class="card">
+              <div class="card-header">
+              <h2><?php echo $row['title']; ?></h2>
+              <img src="https://picsum.photos/400/300?random=<?php echo $row['id']; ?>" alt="Blog Image" />
+              <p><?php echo $row['content']; ?></p>
+                      <small class="load-more">Posted on <?php echo $row['created_at']; ?></small>
+              <div> <a  href="edite.php">Edit</a></div>
+                     <div style="width: fit-content; background: red;"> <a  href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></div>
+            </div>
           </div>
         </section>
         <div class="container load">

@@ -1,25 +1,20 @@
-<?php
-// delete.php
+<?php 
+include("../includes/config.php");
 
-//database connection
-include_once 'includes/config.php';
-
-// Get post ID from query string
-$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
-
-if ($id > 0) {
-    // Prepare and execute delete statement
-    $stmt = $conn->prepare("DELETE FROM posts WHERE id = ?");
-    $stmt->bind_param("i", $id);
-    if ($stmt->execute()) {
+if (isset($_GET['id']))
+{
+    $id = $_GET['id'];
+    // Perform delete operation using the $id
+    $query = "DELETE FROM Blogs WHERE id = $id";
+    // Execute the query
+    $result = mysqli_query($conn, $query);
+    if ($result) {
         echo "Post deleted successfully.";
     } else {
-        echo "Error deleting post.";
+        echo "Error deleting post: " . mysqli_error($conn);
     }
-    $stmt->close();
-} else {
-    echo "Invalid post ID.";
+    header("Location: index.php");
+    exit();
 }
 
-$conn->close();
 ?>

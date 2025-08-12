@@ -13,6 +13,8 @@ CREATE TABLE blogs (
     content TEXT NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+alter table blogs
+ADD image_URL MEDIUMBLOB ;
 USE portfolio;
 create table visitorcontacts (
     id int auto_increment primary key,

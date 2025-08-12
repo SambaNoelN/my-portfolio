@@ -80,18 +80,16 @@ html {
 
 .main-content {
   padding: 2rem 0;
-  background-image: url("../images/Background.jpg");
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: auto;
   position: relative;
 }
 
 .main-content .card {
   max-width: 384px;
-  min-height: 530px;
-  max-height: 580px;
+  height: auto;
   padding: 24px 24px 32px;
   box-shadow: 0px 12px 16px -4px #10182814, 0px 4px 6px -2px #10182808;
   display: flex;

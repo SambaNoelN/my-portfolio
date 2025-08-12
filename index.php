@@ -1,3 +1,9 @@
+<?php  
+    session_start();
+    if (isset($_POST["language"])) {$_SESSION["language"] = $_POST["language"];}
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <marquee style="position: stick; top: 0;">Present intern at <b style="color: skyblue;">skye8 tech company</b> track:  <b style="color:black">back-end dev</b> <?php echo date('Y-m-d:H-m-s') ?></marquee>
+    <marquee style="position: stick; top: 0;">Present intern at <b style="color: skyblue;">skye8 tech company</b> &#128526;track:  <b style="color:black">back-end dev</b> <?php echo date('D, j M Y, :H:i:s') ?></marquee>
     <header style="position: stick; top: 0;"><?php include 'includes/header.php'; ?></header>
     
         <h1> <img src="data/dom.png" alt="image" style="border-radius: 50%; width:75px; height: 75px;">Welcome to My Portfolio</h1>
-        <div class="intro">
+        <div class="intro">&#128526;
             Hi, I'm a passionate developer showcasing my latest projects and featured work. Explore below to see what I've been working on!
         </div>
         <h2>Featured projects</h2>
@@ -25,9 +31,8 @@
             </div>
             <div class="item">
                 <div class="item-title">Design Portfolio</div>
-                <div class="item-desc">A collection of my best graphic and UI/UX design work.</div>
-                <img src="data/project2.jpg" alt="project photo" width="100px" height="100px">
-                <a href="includes/portfolio.php">Designed portfolio</a>
+                <div class="item-desc">A collection of my best graphic and UI/UX design work.">
+                <a href="includes/portfolio.php"><img src="data/project2.jpg" alt="project photo" width="100px" height="100px"></a>
                 
             </div>
             <div class="item">
