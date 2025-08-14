@@ -248,11 +248,11 @@ a{
             <a href="#" class="logo">Portfolio</a>
             <ul>
                 <li><a class="active" href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="../about.php">About</a></li>
                 <li><a href="">Portfolio</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">gallery</a></li>
+                <li><a href="../services.php">Service</a></li>
+                <li><a href="../contact.php">Contact</a></li>
+                <li><a href="../gallery.php">gallery</a></li>
             </ul>
         </nav>
 
@@ -284,12 +284,12 @@ a{
                     , i deliver innovation solutions that meet and exceed expectations.
                 </p>
                 <div class="btn-sci">
-                    <a href="#" class="btn">Download CV</a>
+                    <a href="#" class="btn" download="CV_Samba_Noel.pdf">Download CV</a>
                     <div class="sci">
-                        <a href="#">fac</a>
+                        <a href="#">facebook</a>
                         <a href="#">google</a>
-                        <a href="#">insta</a>
-                        <a href="#">linkin</a>
+                        <a href="#">instagram</a>
+                        <a href="#">linkedin</a>
                     </div>
                 </div>
             </div>

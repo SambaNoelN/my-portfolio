@@ -71,30 +71,25 @@ $result = mysqli_query($conn, $query);
          <aside class="badge"><a href="create.php">Add Post</a></aside>
       </div>
     </header>
-<?php
-    while ($row = mysqli_fetch_assoc($result)) {
-        ?>
         <section class="main-content">
           <div class="container grid">
+            <?php while ($row = mysqli_fetch_assoc($result)) { ?>
             <div class="card">
-              <div class="card-header">
-              <h2><?php echo $row['title']; ?></h2>
-              <img src="https://picsum.photos/400/300?random=<?php echo $row['id']; ?>" alt="Blog Image" />
-              <p><?php echo $row['content']; ?></p>
-                      <small class="load-more">Posted on <?php echo $row['created_at']; ?></small>
-              <div> <a  href="edite.php">Edit</a></div>
-                     <div style="width: fit-content; background: red;"> <a  href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></div>
-            </div>
-          </div>
+                <div class="card-header">
+                  <h2><?php echo $row['title']; ?></h2>
+                  <img src="https://picsum.photos/400/300?random=<?php echo $row['id']; ?>" alt="Blog Image" />
+                  <p><?php echo $row['content']; ?></p>
+                          <small class="load-more">Posted on <?php echo $row['created_at']; ?></small>
+                  <div> <a  href="edite.php">Edit</a></div>
+                        <div style="width: fit-content; background: red;"> <a  href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></div>
+                </div>
+              </div>
+            <?php }  mysqli_close($conn); ?>
         </section>
         <div class="container load">
       <p class="load-more"><i class="fas fa-arrow-down"></i> Load more</p>
     </div>
-        <?php
-    }
-
-mysqli_close($conn);
-?>
+       
   <?php include '../includes/footer.php'; ?>
 </body>
 </html>

@@ -29,23 +29,26 @@
                 <div class="item-desc">A web application for managing tasks efficiently with a modern UI.</div>
                 <img src="data/project1.jpg" alt="project photo" width="100px" height="100px">
             </div>
+
             <div class="item">
                 <div class="item-title">Design Portfolio</div>
-                <div class="item-desc">A collection of my best graphic and UI/UX design work.">
+                <div class="item-desc">A collection of my best graphic and UI/UX design work."></div>
                 <a href="includes/portfolio.php"><img src="data/project2.jpg" alt="project photo" width="100px" height="100px"></a>
-                
             </div>
+
             <div class="item">
                 <div class="item-title">Open Source Contributions</div>
                 <div class="item-desc">Highlights of my contributions to open source projects on GitHub.</div>
                 <img src="data/project1.jpg" alt="project photo" width="100px" height="100px">
             </div>
+
             <div class="item">
                 <div class="item-title">school management system</div>
                 <div class="item-desc">A system that manages all student can register, login, and recover password when forgetton</div>
                 <img src="data/project2.jpg" alt="project photo" width="100px" height="100px">
             </div>
-         </div>
+
+         
         </div>
     <footer><?php include 'includes/footer.php'; ?></footer>
 </body>
