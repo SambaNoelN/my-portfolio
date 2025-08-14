@@ -26,10 +26,10 @@
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
         </div>
-        <p style="color: skyblue;">At SKYE8 we LIVE THE FUTURE! <a href="https://Skye8.tech.com">read more</a></p>
+        <p style="color: skyblue;">At SKYE8 we LIVE THE FUTURE! <a href="https://skye8.tech" target="_blank">read more</a></p>
         <hr>
         <small style="opacity: 0.7;">&copy; <?php echo date('Y'); ?> Samba Noel N. All rights reserved.</small>
     </div>
-    <!-- Font Awesome CDN for icons -->
+
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </footer>

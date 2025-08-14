@@ -16,7 +16,7 @@
 </head>
 <body>
     <marquee style="position: stick; top: 0;">Present intern at <b style="color: skyblue;">skye8 tech company</b> &#128526;track:  <b style="color:black">back-end dev</b> <?php echo date('D, j M Y, :H:i:s') ?></marquee>
-    <header style="position: stick; top: 0;"><?php include 'includes/header.php'; ?></header>
+         <header style="position: stick; top: 0;"><?php include 'includes/header.php'; ?></header>
     
         <h1> <img src="data/dom.png" alt="image" style="border-radius: 50%; width:75px; height: 75px;">Welcome to My Portfolio</h1>
         <div class="intro">&#128526;
@@ -45,7 +45,7 @@
                 <div class="item-desc">A system that manages all student can register, login, and recover password when forgetton</div>
                 <img src="data/project2.jpg" alt="project photo" width="100px" height="100px">
             </div>
-           
+         </div>
         </div>
     <footer><?php include 'includes/footer.php'; ?></footer>
 </body>
